@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace PizzeriaSimple
 {
-    public partial class Form1 : Form
+    public partial class Principal : Form
     {
-        public Form1()
+        //Atributos
+        Menu VMenu;
+
+        //Constructores
+        public Principal()
         {
             InitializeComponent();
+        }
+
+        //Metodos
+        private void button1_Click(object sender, EventArgs e)
+        {
+           VMenu = new Menu();
+           VMenu.ShowDialog();
         }
     }
 }
